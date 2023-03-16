@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 /**
+ * main - Entry point
  * Write a C program that prints exactly
  * use the function puts
  * You are not allowed to use printf
- * Your program should end with the value 0
+ * Return: Always 0 (Success)
  */
 
 int main(void)
