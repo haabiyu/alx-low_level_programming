@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 
 /**Write a program that prints the alphabet in lowercase, followed by a new line.
  * You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
@@ -10,7 +10,7 @@ int main(void)
 {
 	char a;
 
-	for(a=97; a<=122; a++)
+	for(a = 97; a <= 122; a++)
 		putchar(a);
 	putchar('\n');
 	return(0);
