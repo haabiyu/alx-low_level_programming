@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- * int main(void)
+ * main - main block)
  *
  * assign a random number to the variable n each time it is execute
  * The number, followed by
