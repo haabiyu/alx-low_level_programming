@@ -1,16 +1,13 @@
-#inlcude "main.h"
+#include "main.h"
 
-/**Write a function that computes the absolute value of an integer.
- *
- *Prototype: int _abs(int);
+/**
+ * _abs - calculate the absolute value of the number from zero.
+ * @i: the integer to be converted.
+ * Return: absolute value of the input number.
  */
-
-int _abs(int);
+int _abs(int i)
 {
-	int a;
-
-	if(a < 0)
-		return(a * -1);
-	else
-		return(a);
+	if (i < 0)
+		i = i * -1;
+	return (i);
 }
