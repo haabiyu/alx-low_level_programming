@@ -10,14 +10,13 @@
 
 int main(void)
 {
-	char s[] = "_putchar";
+	char c[] = "_putchar";
 	int i;
 
-	while (s[i] != '\0')
+	for (i = 0; i < 9; i++)
 	{
-		_putchar(s[i]);
-		i++;
+		_putchar(c[i]);
 	}
-
-	return(0);
+	_putchar('\n');
+	return (0);
 }
