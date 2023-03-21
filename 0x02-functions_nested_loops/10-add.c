@@ -1,15 +1,17 @@
 #include "main.h"
 
-/**Write a function that adds two integers and returns the result.
- *
- *Prototype: int add(int, int);
+/**
+ * add - adds two numbers together.
+ * @i: The first number to be added.
+ * @j: The second number to be added.
+ * Return: the sum of two numbers.
  */
 
-int add(int, int);
+int add(int, int)
 {
 	int a, b;
 
 	sum = a + b;
 
-	return(sum);
+	return (sum);
 }
