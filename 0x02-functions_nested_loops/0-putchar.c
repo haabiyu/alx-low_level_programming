@@ -1,12 +1,23 @@
-#include <stdio.h>
+#include "main.h"
 
-/**Write a program that prints _putchar, followed by a new line.
- * The program should return 0
+/**
+ * main - prints the string "Holberton" from a character array.
+ *
+ * Write a program that prints _putchar, followed by a new line.
+ *
+ * Return: 0 on success.
  */
 
 int main(void)
 {
-	printf("_putchar\n");
+	char s[] = "_putchar";
+	int i;
+
+	while (s[i] != '\0')
+	{
+		putchar(s[i]);
+		i++;
+	}
 
 	return(0);
 }
