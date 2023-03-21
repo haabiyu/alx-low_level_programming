@@ -7,11 +7,7 @@
  * Return: the sum of two numbers.
  */
 
-int add(int, int)
+int add(int i, int j)
 {
-	int a, b;
-
-	sum = a + b;
-
-	return (sum);
+	return (i + j);
 }
