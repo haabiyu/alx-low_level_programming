@@ -1,27 +1,26 @@
-#include "stdio.h"
-
+#include <stdio.h>
 /**
- * Write a program that prints the first 50 Fibonacci numbers, starting with 1 and 2, followed by a new line.
- * The numbers must be separated by comma, followed by a space ,
- * You are allowed to use the standard library
- * Return: 0
- */
-
+  * main - print the first 50 fibonacci numbers.
+  * Return: Nothing.
+  */
 int main(void)
 {
-	long int a, b, c;
-	int n;
+	unsigned long count, i, j, k;
 
-	a = 1;
-	b = 2;
-
-	for (n = 0; n <= 50; n++)
+	i = 0;
+	j = 1;
+	for (count = 0; count < 50; count++)
 	{
-        	c = a + b;
-		printf("%ld, ", c);
-		a=b;
-		b=c;
+		k = i + j;
+		i = j;
+		j = k;
+		printf("%lu", k);
+		if (count == 49)
+			putchar('\n');
+		else
+		{
+			printf(", ");
+		}
 	}
-	printf("\n"0);
 	return (0);
 }
