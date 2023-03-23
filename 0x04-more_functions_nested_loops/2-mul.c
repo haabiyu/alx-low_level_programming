@@ -1,13 +1,16 @@
 #include "main.h"
 
-/**Write a function that multiplies two integers.
- *
- *Prototype: int mul(int a, int b);
+/**
+ * mul - input
+ * Description: multiplies 2 numbers
+ * @a: first number
+ * @b: second number
+ * Return: the answer
  */
 
-int mul(int a, int b);
+int mul(int a, int b)
 {
 	multiply = a * b;
 
-	return(multiply);
+	return (multiply);
 }
