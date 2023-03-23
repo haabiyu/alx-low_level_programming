@@ -1,23 +1,30 @@
 #include "main.h"
 
-/**Write a function that prints a square, followed by a new line.
- * Prototype: void print_square(int size);
- * You can only use _putchar function to print
- * Where size is the size of the square
- * If size is 0 or less, the function should print only a new line
- * Use the character # to print the square
+/**
+ * print_square - entry point
+ *
+ * Description: Prints square
+ *@size: size of square
+ * Return: void
  */
 
-void print_square(int size);
+void print_square(int size)
 {
-	int i, j;
+	int row, column;
 
-	for(i=1; i<=size; i++)
+	if (size <= 0)
 	{
-		for(j=1; j<=size; j++)
-		{
-			_putchar('*');
-		}
 		_putchar('\n');
+	}
+	else
+	{
+		for (row = 1; row <= size; row++)
+		{
+			for (column = 1; column <= size; column++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
 	}
 }
