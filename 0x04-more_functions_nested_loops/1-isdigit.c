@@ -1,17 +1,17 @@
 #include "main.h"
 
-/**Write a function that checks for a digit (0 through 9).
+/**
+ * _isdigit - input
  *
- * Prototype: int _isdigit(int c);
- * Returns 1 if c is a digit
- * Returns 0 otherwise
- * FYI: The standard library provides a similar function: isdigit. Run man isdigit to learn more.
+ * Description: define if a character is a number
+ * @c: charater
+ * Return: 1 yes 0 no
  */
 
-int _isdigit(int c);
+int _isdigit(int c)
 {
-	if(c >= '0' && c <= '9')
-		return(1);
+	if (c >= '0' && c <= '9')
+		return (1);
 	else
-		return(0);
+		return (0);
 }
