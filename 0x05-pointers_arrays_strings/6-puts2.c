@@ -12,10 +12,10 @@
 void puts2(char *str)
 {
 	int i;	/* declare integer variable i*/
-	
-	/* loop through the string, incrementing i by 2 each time to skip every other character*/
-	for (i = 0; str[i] != '\0'; i += 2) 
-	{ 
+
+	/* loop the string, incrementing i by 2 each time to skip character*/
+	for (i = 0; str[i] != '\0'; i += 2)
+	{
 		_putchar(str[i]);	/* print the character at index i using _putchar*/
 	}
 	_putchar('\n');	/* print a newline character using _putchar*/
