@@ -8,14 +8,9 @@
 void print_rev(char *s)
 {
 	int len = 0;
-	char *t = s;
 
 	/* find the length of the string */
-	while (*t)
-	{
-		len++;
-		t++;
-	}
+	len = _strlen(s);
 
 	/* print the string in reverse */
 	while (len > 0)
