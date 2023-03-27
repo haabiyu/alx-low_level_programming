@@ -21,7 +21,7 @@ void puts_half(char *str)
     }
     /*printf("%d", len_str);*/
 
-    half_str = (len_str - 1) / 2;         /*half the length of the string*/
+    half_str = len_str / 2;         /*half the length of the string*/
     /*printf("%d", half_str);*/
 
     for (i = half_str; str[i] != '\0'; i++)
