@@ -1,12 +1,11 @@
 #include "main.h"
 
- /**
-  * _strlen - return length of a string.
-  *
-  * @s: Pointer to the string to be measured
-  *
-  * Return: Length of string
-  */
+/**
+ * _strlen - main function.
+ * @s: Pointer with the address value.
+ *
+ * Return: none.
+ */
 
 int _strlen(char *s)
 {
