@@ -9,14 +9,15 @@
  * Return: none.
  */
 
-void puts2(char *str);
+void puts2(char *str)
 {
-    int i;
+    int i;	/* declare integer variable i*/
 
-    for(i=0; str[i]!='\0'; i++)
+    /* loop the string, incrementing 2 each time to skip character*/
+    for (i=0; str[i] != '\0'; i++)
        {
-           putchar(str[i]);
+           _putchar(str[i]);	/* print the character at index i using _putchar*/
            i++;
        }
-    _putchar('\n');
+    _putchar('\n');	 /* print a newline character using _putchar*/
 }
