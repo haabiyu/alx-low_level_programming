@@ -1,18 +1,21 @@
 #include "main.h"
 
-/**Write a function that returns the length of a string.
- * Prototype: int _strlen(char *s);
- * FYI: The standard library provides a similar function: strlen. Run man strlen to learn more.
- */
+ /**
+  * _strlen - Returns the length of a string
+  * 
+  * @s: Pointer to the string to be measured
+  * 
+  * Return: Length of string
+  */
 
-int _strlen(char *s);
+int _strlen(char *s)
 {
-    int count = 0;
+    int count = 0;	/*Initialize variable to store length of string*/
 
-    while(s[i] != '\0')
+    while (*s != '\0')/*Loop until the end of the string is reached*/
     {
-        count++;
-        i++;
+        count++;	/*Increment the length by 1*/
+        s++;		/*Move the pointer to the next character*/
     }
-    return(count);
+    return (count);	/*Return the length of the string*/
 }
