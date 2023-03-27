@@ -9,15 +9,13 @@
 
 void _puts(char *str)
 {
-	int i;
-
 	/* check if the character is not null,
 	 * if true then go inside the loop*/
-	while (str[i] != '\0')
+	while (*str != '\0')
 	{
 		/* call our _putchar function instead of printf*/
-		_putchar(str[i]);
-		i++;
+		_putchar(*str);
+		str++;
 	}
 	_putchar('\n');	/* print new line after printing the string*/
 }
