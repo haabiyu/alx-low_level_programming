@@ -1,10 +1,15 @@
-#inlcude "main.h"
+#include "main.h"
 
-/**Write a function that reverses a string.
- * Prototype: void rev_string(char *s);
+/**
+ * print_rev - main function.
+ * @s: Pointer, the string to print.
+ *
+ * Description: This function prints a string in reverse.
+ *
+ * Return: none.
  */
 
-void rev_string(char *s);
+void rev_string(char *s)
 {
     int i;
     int count = 0;
