@@ -1,7 +1,12 @@
-#inlcude "main.h"
+#include "main.h"
 
-/**Write a function that prints every other character of a string, starting with the first character, followed by a new line.
- * Prototype: void puts2(char *str);
+/**
+ * puts2 - main function.
+ * @str: Pointer, the string to print.
+ *
+ * Description: This function prints every other character of a string
+ * (divisible by two)
+ * Return: none.
  */
 
 void puts2(char *str);
