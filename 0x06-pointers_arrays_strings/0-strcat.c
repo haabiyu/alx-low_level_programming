@@ -1,34 +1,30 @@
 #include "main.h"
 
-/**Write a function that concatenates two strings.
- * Prototype: char *_strcat(char *dest, char *src);
- * This function appends the src string to the dest string, overwriting the terminating null byte (\0) at the end of dest, and then adds a terminating null byte
- * Returns a pointer to the resulting string dest
- * FYI: The standard library provides a similar function: strcat. Run man strcat to learn more.
+/**
+ * _strcat - concatenates two strings
+ * @dest: input value
+ * @src: input value
+ *
+ * Return: void
  */
 
 char *_strcat(char *dest, char *src)
 {
-    int i = 0, len_dest = 0, len_src = 0;
-
-    while(dest[i] != '\0')  // finding the length of the first string
+    /* i and j are used to iterate over the dest and src strings respectively */
+    int i = 0, j = 0;
+    
+    while (dest[i] != '\0')
+    i++;    /* iterate over the dest string until null byte is reached */
+    
+    while (src[j] != '\0')
     {
-        len_dest++;
+        /* append each character of the src string to the dest string */
+        dest[i] = src[j]; 
         i++;
+        j++;
     }
-    //printf("%d\n", len_dest);<-------- to check the length of the first string
-
-    i = 0;
-    while(src[i] != '\0')   // finding the lenght of the second string
-    {
-        len_src++;
-        i++;
-    }
-    //printf("%d\n", len_src); <-------- to check the length of the second string
-
-    for(i=0; i < len_src; i++)  // concatinating the second string to the first string
-    {
-        dest[len_dest + i] = src[i];
-    }
-    return (dest);
+    
+    dest[i] = '\0'; /* add a terminating null byte to the resulting string */
+    
+    return dest; /* return a pointer to the resulting string dest */
 }
